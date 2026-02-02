@@ -11,7 +11,7 @@ public class ConsegnaS17L1Application {
 		SpringApplication.run(ConsegnaS17L1Application.class, args);
 
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-		
+
 	}
 
 }

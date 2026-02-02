@@ -21,6 +21,10 @@ public class Pizza extends ElementoMenu{
 
     @Override
     public String toString() {
-        return this.getName() + " | " + this.getCalorie() + "cal | " + this.getPrezzo() + "€";
+        String topping = listaTopping.stream()
+                .map(Topping::getName)
+                .reduce((a, b) -> a + ", " + b)
+                .orElse("nessuno");
+        return this.getName() + "(" +  topping + ") | " + this.getCalorie() + "cal | " + this.getPrezzo() + "€";
     }
 }

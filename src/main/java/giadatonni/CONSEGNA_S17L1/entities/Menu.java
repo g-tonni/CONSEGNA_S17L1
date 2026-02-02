@@ -14,6 +14,7 @@ public class Menu {
     }
 
     public void stampaMenu(){
+        System.out.println("");
         System.out.println("Pizze");
         this.listaPizze.forEach(elementoMenu -> System.out.println(elementoMenu));
         System.out.println("");

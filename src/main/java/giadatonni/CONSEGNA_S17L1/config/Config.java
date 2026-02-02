@@ -69,12 +69,12 @@ public class Config {
 
     @Bean
     public Bevande cocaCola(){
-        return new Bevande("Acqua", 100, 2.50, 0.33);
+        return new Bevande("CocaCola", 100, 2.50, 0.33);
     }
 
     @Bean
     public Bevande vino(){
-        return new Bevande("Acqua", 607, 7.5, 13, 0.75);
+        return new Bevande("Vino", 607, 7.5, 13, 0.75);
     }
 
     @Bean

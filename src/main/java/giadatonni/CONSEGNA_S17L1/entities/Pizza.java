@@ -1,12 +1,9 @@
 package giadatonni.CONSEGNA_S17L1.entities;
 
 import lombok.Getter;
-import lombok.ToString;
-
 import java.util.List;
 
 @Getter
-@ToString
 public class Pizza extends ElementoMenu{
     private List<Topping> listaTopping;
 
@@ -20,5 +17,10 @@ public class Pizza extends ElementoMenu{
             this.setPrezzo(this.getPrezzo() + listaTopping.get(i).getPrezzo());
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return this.getName() + " | " + this.getCalorie() + "cal | " + this.getPrezzo() + "€";
     }
 }
